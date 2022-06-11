@@ -5,7 +5,7 @@ export const ContainerCard = styled.div`
   width: 80vw;
   height: 30vh;
   flex-flow: row wrap;
-  border: 2px solid #0873ff;
+  border: 2px solid #e8e8e8;
   border-radius: 5px;
   box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%);
   transition: all 0.2s ease-in-out;
@@ -34,6 +34,10 @@ export const ContainerText = styled.div`
   flex-direction: column;
   width: 70%;
   padding: 10px 0 0 15px;
+
+  hr {
+    margin-top: 5px;
+  }
 `
 
 export const NewsTitle = styled.p`
