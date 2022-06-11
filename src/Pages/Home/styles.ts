@@ -1,29 +1,27 @@
 import styled from 'styled-components'
 
-export const Container = styled.div`
+export const Container = styled.main`
   width: 100%;
   min-height: 100vh;
   background-color: #ffffff;
 `
 
-export const CategoriesMenu = styled.div`
+export const CategoriesMenu = styled.article`
   display: flex;
-  flex-direction: column;
-  background-color: #2779f5;
-  width: 100px;
-  border: 2px white;
+  width: 100%;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 5vw;
+  margin-top: 5vh;
 `
 
 export const CategoryButton = styled.button<{ isActiveBrand: boolean }>`
   cursor: pointer;
   background: none;
   border: none;
-  padding: 5px 5px;
-  border: ${(props) => props.isActiveBrand && '2px solid white'};
-  color: ${(props) => (props.isActiveBrand ? '#fff' : 'black')};
-  font-size: 1.4rem;
+  border-bottom: ${(props) => props.isActiveBrand && '2px solid #2779f5'};
+  color: ${(props) => (props.isActiveBrand ? '#2779f5' : '#000')};
+  font-size: 1.2rem;
 `
 
 export const NewsContainer = styled.div`
