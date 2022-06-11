@@ -1,6 +1,10 @@
 const paths = {
   Home: '/',
-  Notices:'/noticias'
+  Notice:'/noticias:id',
+  Notices:'/admin-noticias',
+  NewNotice:'/nova-noticia',
+  EditNotice:'/editar-noticia',
+  NewCategory: '/nova-categoria'
 }
 
 export default paths
