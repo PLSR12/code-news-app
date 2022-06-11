@@ -1,6 +1,6 @@
 const paths = {
   Home: '/',
-  Notice:'/noticias:id',
+  Notice:'/noticias/:id',
   Notices:'/admin-noticias',
   NewNotice:'/nova-noticia',
   EditNotice:'/editar-noticia',
