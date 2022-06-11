@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import api from '../../services/api'
 import { CardNoticies } from '../../Components'
+import formatDate from '../../utils/formatDate'
 
 import {
   Container,
@@ -61,22 +62,22 @@ export function Home({ state }: any) {
 
   return (
     <>
-      <CategoriesMenu>
-        {categories &&
-          categories.map((category: { id: any; name: string }) => (
-            <CategoryButton
-              type="button"
-              key={category.id}
-              isActiveBrand={activeCategories === category.id}
-              onClick={() => {
-                setActiveCategorie(category.id)
-              }}
-            >
-              {category.name}
-            </CategoryButton>
-          ))}
-      </CategoriesMenu>
       <Container>
+        <CategoriesMenu>
+          {categories &&
+            categories.map((category: { id: any; name: string }) => (
+              <CategoryButton
+                type="button"
+                key={category.id}
+                isActiveBrand={activeCategories === category.id}
+                onClick={() => {
+                  setActiveCategorie(category.id)
+                }}
+              >
+                {category.name}
+              </CategoryButton>
+            ))}
+        </CategoriesMenu>
         <NewsContainer>
           {filteredNews &&
             filteredNews.map((notice: { id: number }) => (
