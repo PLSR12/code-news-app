@@ -15,7 +15,7 @@ const listLinks = [
   }, 
   {
     id: 3,
-    label: 'Nova Marca',
+    label: 'Nova Categoria',
     link: paths.NewCategory,
   }
 ]

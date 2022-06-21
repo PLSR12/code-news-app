@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import api from '../../services/api'
-import { CardNoticies } from '../../Components'
+import { CardNoticies } from '../../components'
 import formatDate from '../../utils/formatDate'
 
 import {
@@ -31,8 +31,6 @@ export function Home({ state }: any) {
 
     async function loadNews() {
       const { data: allNews }: any = await api.get('notices')
-
-      console.log(allNews)
 
       const newNews = allNews.map((notice: any) => {
         return {

@@ -13,8 +13,6 @@ export function CardNoticies({ notice }: any) {
   function getNotice() {
     const id = notice.id
 
-    console.log(notice.id)
-
     push(`/notice/:${id}`)
   }
 

@@ -1,8 +1,7 @@
 import { Switch, Route } from 'react-router-dom'
 
-import Layout from './Layout'
-import { Home, Notice } from './Pages'
-import Admin from './Pages/Admin'
+import Layout from './layout'
+import { Home, Notice, Admin } from './pages'
 
 import paths from './config/paths'
 
@@ -15,7 +14,7 @@ export default function RoutesPath() {
       <Route path={paths.NewCategory} component={Admin} />
       <Layout>
         <Route exact path={paths.Home} component={Home} />
-        <Route exact path={"/notice/:id"} component={Notice} />
+        <Route exact path={'/notice/:id'} component={Notice} />
       </Layout>
     </Switch>
   )

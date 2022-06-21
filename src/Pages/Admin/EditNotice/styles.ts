@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Button } from '../../../Components'
+import { Button } from '../../../components'
 import CloudUploadIcon from '@mui/icons-material/CloudUpload'
 
 export const Container = styled.div`

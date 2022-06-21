@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { useHistory, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 
 import api from '../../services/api'
 import formatDate from '../../utils/formatDate'
@@ -12,23 +12,21 @@ import {
   ContainerImage,
   DateNews,
   NewsContent,
-} from './style'
+} from './styles'
 
 export function Notice() {
   const [notice, setNotice] = useState<any>([])
   const { id } = useParams<{ id: string }>()
 
   useEffect(() => {
-    async function loadProducts() {
+    async function loadNotice() {
       const splitedId = id.split(':')[1]
-      console.log(splitedId)
-      const data = await api.get(`/notice/${splitedId}`)
 
-      console.log(data.data)
+      const response = await api.get(`/notice/${splitedId}`)
 
-      setNotice(data.data)
+      setNotice(response.data)
     }
-    loadProducts()
+    loadNotice()
   }, [id])
 
   return (

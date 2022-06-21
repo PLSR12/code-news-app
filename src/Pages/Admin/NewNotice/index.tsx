@@ -9,7 +9,7 @@ import CloudUploadIcon from '@mui/icons-material/CloudUpload'
 
 import api from '../../../services/api'
 
-import { ErrorMessage } from '../../../Components'
+import { ErrorMessage } from '../../../components'
 
 import { Container, Label, Input, ButtonStyle, LabelUpload } from './styles'
 

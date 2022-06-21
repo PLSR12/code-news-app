@@ -15,6 +15,12 @@ export const ContentNotices = styled.article`
   margin-left: 20%;
   padding: 20px;
 
+  @media (max-width: 1024px) {
+    padding-top: 20px;
+    width: 90%;
+    margin-left: 5%;
+  }
+
   .lineDate {
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
@@ -52,14 +58,13 @@ export const ContainerImage = styled.div`
   margin-top: 35px;
 
   img {
-    width: 50vw;
+    width: 70vw;
     height: 28vw;
     min-height: max-content;
-    border-radius: 5px;
 
     @media (max-width: 1024px) {
-      min-width: 57vw;
-      min-height: 35vw;
+      min-width: 85vw;
+      min-height: 55vw;
       padding: 5px 5px 5px 5px;
     }
   }
@@ -69,4 +74,5 @@ export const NewsContent = styled.p`
   font-size: 1.3rem;
   color: #000000;
   margin-top: 30px;
+  text-align: justify;
 `

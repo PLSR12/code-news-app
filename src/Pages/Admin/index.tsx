@@ -8,10 +8,10 @@ import NewNotice from './NewNotice'
 import EditNotice from './EditNotice'
 import NewCategory from './NewCategory'
 
-import { SideMenuAdmin } from '../../Components'
+import { SideMenuAdmin } from '../../components'
 import paths from '../../config/paths'
 
-export default function Admin({ match: { path } }: any) {
+export function Admin({ match: { path } }: any) {
   return (
     <Container>
       <SideMenuAdmin path={path} />

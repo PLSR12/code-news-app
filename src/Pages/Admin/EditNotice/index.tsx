@@ -8,7 +8,7 @@ import * as Yup from 'yup'
 
 import api from '../../../services/api'
 
-import { ErrorMessage } from '../../../Components'
+import { ErrorMessage } from '../../../components'
 
 import {
   Container,

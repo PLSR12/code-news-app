@@ -1,6 +1,8 @@
 import { ReactNode } from 'react'
+import { ButtonHTMLAttributes } from 'react'
 
-export default interface IButtonProps {
+type IButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   children: ReactNode
-  type?: any
 }
+
+export default IButtonProps

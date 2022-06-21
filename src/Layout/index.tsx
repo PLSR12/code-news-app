@@ -1,6 +1,6 @@
 import { ReactNode } from 'react'
 
-import {Header} from '../Components'
+import {Header} from '../components'
 
 import { Body, Container, ContainerPage } from './styles'
 
